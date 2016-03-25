@@ -19,27 +19,27 @@ void collision::detectCollision(Bee b){
 /*if(calDistance()+0.75==0){
     b.x++;
 }*/
-if(b.x==by.x && b.y==by.y && b.z==by.z){
+if(b.x+b.radius==by.x && b.y+b.radius==by.y && b.z+b.radius==by.z){
     b.x++;
     b.z--;
     b.y++;
 }
-else if(b.x==flwr.x && b.y==flwr.y && b.z==flwr.z){
+else if(b.x+b.radius==flwr.x && b.y+b.radius==flwr.y && b.z+b.radius==flwr.z){
     b.x++;
     b.z--;
     b.y++;
 }
-else if(b.x==pers.x && b.y==pers.y && b.z==pers.z){
+else if(b.x+b.radius==pers.x && b.y+b.radius==pers.y && b.z+b.radius==pers.z){
     b.x++;
     b.z--;
     b.y++;
 }
-else if(b.x==wm.x && b.y==wm.y && b.z==wm.z){
+else if(b.x+b.radius==wm.x && b.y+b.radius==wm.y && b.z+b.radius==wm.z){
     b.x++;
     b.z--;
     b.y++;
 }
-else if(b.x==tr.x && b.y==tr.y && b.z==tr.z){
+else if(b.x+b.radius==tr.x && b.y+b.radius==tr.y && b.z+b.radius==tr.z){
     b.x++;
     b.z--;
     b.y++;

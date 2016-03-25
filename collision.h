@@ -12,8 +12,8 @@ class collision
 {
     public:
         collision();
-        void detectCollision();
-        double calDistance();
+        void detectCollision(Bee b);
+       // double calDistance();
     protected:
 
     private:

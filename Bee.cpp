@@ -12,6 +12,7 @@ this->x= x;
 this->y= y;
 this->z= z;
 this->radius=radius;
+x=0;y=0;z=0;radius=0.75;
 }
 
 void Bee::render(){

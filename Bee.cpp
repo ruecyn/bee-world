@@ -1,5 +1,8 @@
 #include "Bee.h"
-
+#include <windows.h>  // for MS Windows
+#include <GL/glut.h>  // GLUT, include glu.h and gl.h
+#include <iostream>
+#include<math.h>
 Bee::Bee()
 {
     //ctor

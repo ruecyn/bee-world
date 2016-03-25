@@ -5,7 +5,7 @@
 class Bee
 {
     public:
-        float x,y,z,radius;
+        float x=0,y=0,z=0,radius=0.75;
         Bee();
         Bee(float x, float y, float z,float radius);
         void render();

@@ -1,6 +1,12 @@
 #ifndef COLLISION_H
 #define COLLISION_H
-
+#include"Bee.h"
+#include"person.h"
+#include"Windmil.h"
+#include"Flowers.h"
+#include"Tree.h"
+#include"Sprinkler.h"
+#include"Backyard.h"
 
 class collision
 {

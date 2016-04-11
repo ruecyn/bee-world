@@ -1,0 +1,24 @@
+ GLdouble originalX;
+
+    void processMouseButtons(int but, int state, int x, int y){
+        switch (state){
+            case GLUT_DOWN:
+                originalX = x;
+                break;
+            case GLUT_UP:
+                originalX = -1;
+                break;
+        }
+
+    }
+    void processMouseMotion(int x, int y){
+        if (originalX > 0){
+            angle += ((originalX - x) / 500);
+            look_x = cam_x + z_dist * sin(angle);
+            look_z = cam_z + z_dist * cos(angle);
+            originalX = x;
+        }
+        if (angle > 2 * M_PI) x -= 2 * M_PI;
+        if (angle < 2 * M_PI) x += 2 * M_PI;
+        glutPostRedisplay();
+    }
